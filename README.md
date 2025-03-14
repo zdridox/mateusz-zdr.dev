@@ -1,1 +1,1 @@
-<a href="https://mateusz-zdr.dev">mateusz-zdr.dev</a>
+<a href="https://mateusz-zdr.dev" target="_blank">mateusz-zdr.dev</a>
