@@ -1,4 +1,4 @@
-import myImage from "../assets/images/me.jpg";
+import myImage from "../assets/images/me.webp";
 import { Card, Alert } from "react-bootstrap";
 
 function MyFace() {

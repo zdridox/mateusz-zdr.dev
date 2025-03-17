@@ -1,6 +1,6 @@
-import SpaceCowboyPng from "../assets/images/SpaceCowboy.png";
-import CarGamePng from "../assets/images/CarGame.png";
-import WallGunPng from "../assets/images/WallGun.png";
+import SpaceCowboyPng from "../assets/images/SpaceCowboy.webp";
+import CarGamePng from "../assets/images/CarGame.webp";
+import WallGunPng from "../assets/images/WallGun.webp";
 import { Card } from "react-bootstrap";
 
 function CreateCard(Title: string, Text: string, Img: string, Link: string) {
