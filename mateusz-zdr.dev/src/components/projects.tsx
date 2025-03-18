@@ -2,6 +2,7 @@ import SpaceCowboyPng from "../assets/images/SpaceCowboy.webp";
 import CarGamePng from "../assets/images/CarGame.webp";
 import WallGunPng from "../assets/images/WallGun.webp";
 import { Card } from "react-bootstrap";
+import { useEffect } from "react";
 
 function CreateCard(Title: string, Text: string, Img: string, Link: string) {
   return (
@@ -22,30 +23,35 @@ function CreateCard(Title: string, Text: string, Img: string, Link: string) {
 }
 
 function Projects() {
+  useEffect(() => {
+    document.title = "Projekty | Mateusz Zdrodowski";
+  }, []);
   return (
-    <div
-      className="mx-auto mt-5 row justify-content-center"
-      style={{ width: "100%" }}
-    >
-      {CreateCard(
-        "SpaceCowboy",
-        "Tower Defense z rewolwerem który czerpię amunicję z gwiazd i dwoma rodzajami przeciwników",
-        SpaceCowboyPng,
-        "https://zdridox.itch.io/spacecowboy"
-      )}
-      {CreateCard(
-        "CarGame",
-        "Gra polegająca na nieskończonym driftowaniu po proceduralnie generowanej mapie",
-        CarGamePng,
-        "https://zdridox.itch.io/cargame"
-      )}
-      {CreateCard(
-        "WallGun",
-        "Gra movementowa z m.in bieganiem po ścianach inpirowana Portal 2 i TitanFall 2 z pistoletem strzelającym ścianami",
-        WallGunPng,
-        "https://zdridox.itch.io/wallgun"
-      )}
-    </div>
+    <>
+      <div
+        className="mx-auto mt-5 row justify-content-center"
+        style={{ width: "100%" }}
+      >
+        {CreateCard(
+          "SpaceCowboy",
+          "Tower Defense z rewolwerem który czerpię amunicję z gwiazd i dwoma rodzajami przeciwników",
+          SpaceCowboyPng,
+          "https://zdridox.itch.io/spacecowboy"
+        )}
+        {CreateCard(
+          "CarGame",
+          "Gra polegająca na nieskończonym driftowaniu po proceduralnie generowanej mapie",
+          CarGamePng,
+          "https://zdridox.itch.io/cargame"
+        )}
+        {CreateCard(
+          "WallGun",
+          "Gra movementowa z m.in bieganiem po ścianach inpirowana Portal 2 i TitanFall 2 z pistoletem strzelającym ścianami",
+          WallGunPng,
+          "https://zdridox.itch.io/wallgun"
+        )}
+      </div>
+    </>
   );
 }
 export default Projects;
