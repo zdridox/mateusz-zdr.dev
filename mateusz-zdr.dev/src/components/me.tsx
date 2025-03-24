@@ -1,4 +1,4 @@
-import myImage from "../assets/images/me.webp";
+import myImage from "../assets/images/me2.webp";
 import { Card, Alert } from "react-bootstrap";
 import { useEffect } from "react";
 
@@ -18,7 +18,7 @@ function MyFace() {
           }}
         >
           <Card.Body>
-            <Card.Img src={myImage} style={{ height: "5472", width: "3648" }} />
+            <Card.Img src={myImage} />
             <Card.Title className="text-center">Mateusz Zdrodowski</Card.Title>
             <Card.Text className="text-center">Deweloper gier wideo.</Card.Text>
           </Card.Body>

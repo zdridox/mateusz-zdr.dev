@@ -29,8 +29,6 @@ function CreateCard(
           src={Img}
           style={{
             paddingTop: "5px",
-            height: "250",
-            width: "315",
             borderRadius: "12px",
           }}
         />
