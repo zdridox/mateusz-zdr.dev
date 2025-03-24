@@ -7,16 +7,35 @@ import TaStronaImg from "../assets/images/taStrona.webp";
 import { Card } from "react-bootstrap";
 import { useEffect } from "react";
 
-function CreateCard(Title: string, Text: string, Img: string, Link: string) {
+function CreateCard(
+  Title: string,
+  Text: string,
+  Img: string,
+  Link: string,
+  Tags: React.ReactNode
+) {
   return (
     <Card
-      className="col-11 col-md-4 mx-md-2 col-lg-3 col-xl-3 col-xxl-2 mt-2"
-      style={{ backgroundColor: "#2B2D42", color: "white" }}
+      className="col-11 col-md-4 mx-1 col-lg-3 col-xl-3 col-xxl-3 mt-2"
+      style={{
+        backgroundColor: "#2B2D42",
+        color: "white",
+      }}
     >
       <Card.Body className="d-flex flex-column">
-        <Card.Img variant="top" src={Img} />
+        <div className="d-flex">{Tags}</div>
+        <Card.Img
+          variant="top"
+          src={Img}
+          style={{
+            paddingTop: "5px",
+            height: "250",
+            width: "315",
+            borderRadius: "12px",
+          }}
+        />
         <Card.Title
-          style={{ textAlign: "center", textDecoration: "underline" }}
+          style={{ textDecoration: "underline", textAlign: "center" }}
         >
           {Title}
         </Card.Title>
@@ -29,6 +48,24 @@ function CreateCard(Title: string, Text: string, Img: string, Link: string) {
   );
 }
 
+function CreateTag(Text: string, Color: string, Width: string) {
+  return (
+    <div
+      style={{
+        fontSize: "12px",
+        fontWeight: "bold",
+        backgroundColor: Color,
+        color: "#2B2D42",
+        width: Width,
+        textAlign: "center",
+      }}
+      className="rounded-1 mx-1"
+    >
+      {Text}
+    </div>
+  );
+}
+
 function Projects() {
   useEffect(() => {
     document.title = "Projekty | Mateusz Zdrodowski";
@@ -37,43 +74,58 @@ function Projects() {
     <>
       <div
         className="mx-auto mt-5 row justify-content-center"
-        style={{ width: "100%" }}
+        style={{ width: "100%", paddingBottom: "50px" }}
       >
         {CreateCard(
           "SpaceCowboy",
           "Tower Defense z rewolwerem który czerpię amunicję z gwiazd i dwoma rodzajami przeciwników",
           SpaceCowboyPng,
-          "https://zdridox.itch.io/spacecowboy"
+          "https://zdridox.itch.io/spacecowboy",
+          <>{CreateTag("GRA", "#26d18d", "15%")}</>
         )}
         {CreateCard(
           "CarGame",
           "Gra polegająca na nieskończonym driftowaniu po proceduralnie generowanej mapie",
           CarGamePng,
-          "https://zdridox.itch.io/cargame"
+          "https://zdridox.itch.io/cargame",
+          <>{CreateTag("GRA", "#26d18d", "15%")} </>
         )}
         {CreateCard(
           "WallGun",
           "Gra movementowa z m.in bieganiem po ścianach inpirowana Portal 2 i TitanFall 2 z pistoletem strzelającym ścianami",
           WallGunPng,
-          "https://zdridox.itch.io/wallgun"
+          "https://zdridox.itch.io/wallgun",
+          <>{CreateTag("GRA", "#26d18d", "15%")}</>
         )}
         {CreateCard(
           "ProceduralLevelTree",
           "proceduralnie generowane drzewko poziomów ze ścieżkami i odblokowywaniem.",
           LevelTreeImg,
-          "https://github.com/zdridox/ProceduralLevelTree"
+          "https://github.com/zdridox/ProceduralLevelTree",
+          <>
+            {CreateTag("ASSET", "#fc68e1", "20%")}
+            {CreateTag("SOURCE", "#f56e3d", "26%")}
+          </>
         )}
         {CreateCard(
           "Arena plugin",
           "Plugin do minecraft(spigot/itp) na Arene 1v1 z kitami.",
           ArenaImg,
-          "https://github.com/zdridox/Arena-Plugin"
+          "https://github.com/zdridox/Arena-Plugin",
+          <>
+            {CreateTag("PLUGIN", "#b59a02", "24%")}
+            {CreateTag("SOURCE", "#f56e3d", "26%")}
+          </>
         )}
         {CreateCard(
           "Ta Strona",
           "Strona napisana z React i Bootstrap hostowana na moim serwerze.",
           TaStronaImg,
-          "https://github.com/zdridox/mateusz-zdr.dev"
+          "https://github.com/zdridox/mateusz-zdr.dev",
+          <>
+            {CreateTag("STRONA", "#4ebded", "26%")}
+            {CreateTag("SOURCE", "#f56e3d", "26%")}
+          </>
         )}
       </div>
     </>

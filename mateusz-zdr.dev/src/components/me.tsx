@@ -14,18 +14,23 @@ function MyFace() {
           style={{
             backgroundColor: "#3A3D2D",
             color: "white",
+            borderColor: "#1e3619",
           }}
         >
           <Card.Body>
-            <Card.Img src={myImage} />
+            <Card.Img src={myImage} style={{ height: "5472", width: "3648" }} />
             <Card.Title className="text-center">Mateusz Zdrodowski</Card.Title>
             <Card.Text className="text-center">Deweloper gier wideo.</Card.Text>
           </Card.Body>
         </Card>
 
         <Alert
-          className="col-10 col-md-8 col-lg-7 col-xl-4 mt-5 mx-2 alert-danger align-self-start"
-          style={{ backgroundColor: "#3A3D2D", color: "white" }}
+          className="col-10 col-md-8 col-lg-7 col-xl-4 mt-5 mx-2 align-self-start"
+          style={{
+            backgroundColor: "#3A3D2D",
+            color: "white",
+            borderColor: "#1e3619",
+          }}
         >
           <div>
             Cześć! Nazywam się Mateusz i zajmuję się programowaniem gier wideo.
