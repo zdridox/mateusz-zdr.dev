@@ -48,7 +48,7 @@ function CreateCard(
   );
 }
 
-function CreateTag(Text: string, Color: string, Width: string) {
+function CreateTag(Text: string, Color: string) {
   return (
     <div
       style={{
@@ -56,7 +56,7 @@ function CreateTag(Text: string, Color: string, Width: string) {
         fontWeight: "bold",
         backgroundColor: Color,
         color: "#2B2D42",
-        width: Width,
+        width: `${12 * Text.length}px`,
         textAlign: "center",
       }}
       className="rounded-1 mx-1"
@@ -81,21 +81,21 @@ function Projects() {
           "Tower Defense z rewolwerem który czerpię amunicję z gwiazd i dwoma rodzajami przeciwników",
           SpaceCowboyPng,
           "https://zdridox.itch.io/spacecowboy",
-          <>{CreateTag("GRA", "#26d18d", "15%")}</>
+          <>{CreateTag("GRA", "#26d18d")}</>
         )}
         {CreateCard(
           "CarGame",
           "Gra polegająca na nieskończonym driftowaniu po proceduralnie generowanej mapie",
           CarGamePng,
           "https://zdridox.itch.io/cargame",
-          <>{CreateTag("GRA", "#26d18d", "15%")} </>
+          <>{CreateTag("GRA", "#26d18d")} </>
         )}
         {CreateCard(
           "WallGun",
           "Gra movementowa z m.in bieganiem po ścianach inpirowana Portal 2 i TitanFall 2 z pistoletem strzelającym ścianami",
           WallGunPng,
           "https://zdridox.itch.io/wallgun",
-          <>{CreateTag("GRA", "#26d18d", "15%")}</>
+          <>{CreateTag("GRA", "#26d18d")}</>
         )}
         {CreateCard(
           "ProceduralLevelTree",
@@ -103,8 +103,8 @@ function Projects() {
           LevelTreeImg,
           "https://github.com/zdridox/ProceduralLevelTree",
           <>
-            {CreateTag("ASSET", "#fc68e1", "20%")}
-            {CreateTag("SOURCE", "#f56e3d", "26%")}
+            {CreateTag("ASSET", "#fc68e1")}
+            {CreateTag("SOURCE", "#f56e3d")}
           </>
         )}
         {CreateCard(
@@ -113,8 +113,8 @@ function Projects() {
           ArenaImg,
           "https://github.com/zdridox/Arena-Plugin",
           <>
-            {CreateTag("PLUGIN", "#b59a02", "24%")}
-            {CreateTag("SOURCE", "#f56e3d", "26%")}
+            {CreateTag("PLUGIN", "#b59a02")}
+            {CreateTag("SOURCE", "#f56e3d")}
           </>
         )}
         {CreateCard(
@@ -123,8 +123,8 @@ function Projects() {
           TaStronaImg,
           "https://github.com/zdridox/mateusz-zdr.dev",
           <>
-            {CreateTag("STRONA", "#4ebded", "26%")}
-            {CreateTag("SOURCE", "#f56e3d", "26%")}
+            {CreateTag("STRONA", "#4ebded")}
+            {CreateTag("SOURCE", "#f56e3d")}
           </>
         )}
       </div>
