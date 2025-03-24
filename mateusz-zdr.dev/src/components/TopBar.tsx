@@ -6,8 +6,10 @@ function Bar() {
   const location = useLocation();
   return (
     <>
-      <div style={{ paddingTop: "5px" }}>
-        {" "}
+      <div
+        style={{ paddingTop: "5px", textAlign: "center" }}
+        className="space-grotesk"
+      >
         <button
           className="btn btn-success btn-sm"
           onClick={() => navigate("/omnie")}

@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="mx-auto" style={{ width: 220 }}>
+      <div className="mx-auto" style={{ width: 230 }}>
         <Bar />
       </div>
       <div>
