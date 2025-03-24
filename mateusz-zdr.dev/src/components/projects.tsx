@@ -104,7 +104,7 @@ function Projects() {
           "https://github.com/zdridox/ProceduralLevelTree",
           <>
             {CreateTag("ASSET", "#fc68e1")}
-            {CreateTag("SOURCE", "#f56e3d")}
+            {CreateTag("REPO", "#a15bbd")}
           </>
         )}
         {CreateCard(
@@ -114,7 +114,7 @@ function Projects() {
           "https://github.com/zdridox/Arena-Plugin",
           <>
             {CreateTag("PLUGIN", "#b59a02")}
-            {CreateTag("SOURCE", "#f56e3d")}
+            {CreateTag("REPO", "#a15bbd")}
           </>
         )}
         {CreateCard(
@@ -124,7 +124,7 @@ function Projects() {
           "https://github.com/zdridox/mateusz-zdr.dev",
           <>
             {CreateTag("STRONA", "#4ebded")}
-            {CreateTag("SOURCE", "#f56e3d")}
+            {CreateTag("REPO", "#a15bbd")}
           </>
         )}
       </div>
