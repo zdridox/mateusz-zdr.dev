@@ -34,10 +34,11 @@ function CreateCard(
         />
         <Card.Title
           style={{ textDecoration: "underline", textAlign: "center" }}
+          className="space-grotesk-2"
         >
           {Title}
         </Card.Title>
-        <Card.Text>{Text}</Card.Text>
+        <Card.Text className="space-grotesk-2">{Text}</Card.Text>
         <a href={Link} target="_blank" className="btn btn-primary mt-auto">
           Dowiedz się więcej
         </a>
@@ -57,7 +58,7 @@ function CreateTag(Text: string, Color: string) {
         width: `${12 * Text.length}px`,
         textAlign: "center",
       }}
-      className="rounded-1 mx-1"
+      className="rounded-1 mx-1 ubuntu-regular"
     >
       {Text}
     </div>

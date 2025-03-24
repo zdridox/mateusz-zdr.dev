@@ -8,12 +8,18 @@ function Contact() {
   return (
     <>
       <div className="mt-5">
-        <Alert className="alert-info mx-auto" style={{ width: "300px" }}>
+        <Alert
+          className="alert-info mx-auto space-grotesk"
+          style={{ width: "300px" }}
+        >
           <h1>Kontakt</h1>
           email: mateusz.zdrod@gmail.com<br></br>
           discord: zdridox
         </Alert>
-        <Alert className="alert-danger mx-auto" style={{ width: "300px" }}>
+        <Alert
+          className="alert-danger mx-auto space-grotesk"
+          style={{ width: "300px" }}
+        >
           <h1>Linki</h1>
           <a href="https://zdridox.itch.io" target="_blank">
             <Button className="mx-1 mt-1 btn-dark">Itch.io</Button>
