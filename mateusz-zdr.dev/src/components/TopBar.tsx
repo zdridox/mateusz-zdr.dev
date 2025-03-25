@@ -12,6 +12,7 @@ function Bar() {
       >
         <button
           className="btn btn-success btn-sm"
+          style={{ backgroundColor: "#26d443", border: "0px" }}
           onClick={() => navigate("/omnie")}
         >
           {location.pathname === "/omnie" ? (
@@ -29,7 +30,8 @@ function Bar() {
           )}
         </button>
         <button
-          className="btn btn-warning btn-sm mx-2"
+          className="btn btn-success btn-sm mx-2"
+          style={{ backgroundColor: "#4f558c", border: "0px" }}
           onClick={() => navigate("/projekty")}
         >
           {location.pathname === "/projekty" ? (
@@ -47,7 +49,8 @@ function Bar() {
           )}
         </button>
         <button
-          className="btn btn-info btn-sm"
+          className="btn btn-success btn-sm"
+          style={{ backgroundColor: "#2fb5b1", border: "0px" }}
           onClick={() => navigate("/kontakt")}
         >
           {location.pathname === "/kontakt" ? (
