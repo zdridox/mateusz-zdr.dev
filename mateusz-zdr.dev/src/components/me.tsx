@@ -15,6 +15,7 @@ function MyFace() {
             backgroundColor: "#3A3D2D",
             color: "white",
             borderColor: "#1e3619",
+            boxShadow: "1px 1px 10px #8cd498 inset",
           }}
         >
           <Card.Body>
@@ -34,6 +35,7 @@ function MyFace() {
             backgroundColor: "#3A3D2D",
             color: "white",
             borderColor: "#1e3619",
+            boxShadow: "1px 1px 10px #8cd498 inset",
           }}
         >
           <div className="space-grotesk">

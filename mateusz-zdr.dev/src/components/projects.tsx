@@ -20,6 +20,7 @@ function CreateCard(
       style={{
         backgroundColor: "#2B2D42",
         color: "white",
+        boxShadow: "1px 1px 10px #2fb5b1 inset",
       }}
     >
       <Card.Body className="d-flex flex-column">
@@ -32,10 +33,7 @@ function CreateCard(
             borderRadius: "12px",
           }}
         />
-        <Card.Title
-          style={{ textDecoration: "underline", textAlign: "center" }}
-          className="space-grotesk-2"
-        >
+        <Card.Title style={{ textAlign: "center" }} className="space-grotesk-2">
           {Title}
         </Card.Title>
         <Card.Text className="space-grotesk-2">{Text}</Card.Text>
