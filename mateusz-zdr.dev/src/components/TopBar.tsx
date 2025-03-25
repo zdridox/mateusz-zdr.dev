@@ -12,7 +12,7 @@ function Bar() {
       >
         <button
           className="btn btn-success btn-sm"
-          style={{ backgroundColor: "#26d443", border: "0px" }}
+          style={{ backgroundColor: "#147d26", border: "0px" }}
           onClick={() => navigate("/omnie")}
         >
           {location.pathname === "/omnie" ? (
